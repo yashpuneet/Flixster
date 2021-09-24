@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
 
     <ImageView
         android:id="@+id/ivPoster"
@@ -13,11 +15,17 @@
 
     <TextView
         android:id="@+id/tvTitle"
-        android:layout_width="288dp"
+        android:layout_width="286dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_toEndOf="@+id/ivPoster"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textAlignment="textStart"
+        android:textColor="#ffffff"
         android:textSize="24sp"
+        android:textStyle="bold|italic"
         tools:text="Escape Room: Tournament of Champions" />
 
     <TextView
@@ -28,5 +36,11 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_toEndOf="@+id/ivPoster"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textAlignment="textStart"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
         tools:text="Six people unwittingly find themselves locked in another series of escape rooms, slowly uncovering what they have in common to survive as they discover all the games that they've played before." />
 </RelativeLayout>
