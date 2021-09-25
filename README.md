@@ -27,9 +27,22 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [x] (2pts) For popular movies (i.e. a movie voted for more than 5 stars), the full backdrop image is displayed. Otherwise, a poster image, the movie title, and overview is listed. Use Heterogenous RecyclerViews and use different ViewHolder layout files for popular movies and less popular ones.
 
 ### App Walkthough GIF
-`TODO://` Add the URL to your animated app walkthough `gif` in the image tag below, `YOUR_GIF_URL_HERE`. Make sure the gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after after adding gif)
 
-<img src="Walkthroughs/MainWalkthrough.gif" width=250><br>
+Main Walkthrough GIF - Runs through usage of application and shows the User-interface
+
+<img src="Walkthroughs/MainWalkthrough.gif" width=500><br>
+
+Orientation Response - Shows the change in less popular movie image displays upon orientation change. The poster image is shown in the portrait orientation and teh backdrop image is shown in the landscape orientation with text on the right in both.
+
+<img src="Walkthroughs/OrientationResponse.gif" width=500><br>
+
+Network Speed Placeholder - Shows the use of a placeholder graphic while teh movie image loads.
+
+<img src="Walkthroughs/PlaceholderDemo.gif" width=500><br>
+
+Heterogeneous RecyclerView - Shows the change in display style for popular and less popular movies. Popular movies with ratings of above 7 are shown with just their Title and Backdrop image in both orientations whereas less popular movies are displayed with poster image, title and overview in portrait or backdrop image, title and overview in landscape.
+
+<img src="Walkthroughs/Popularity.gif" width=500><br>
 
 ### Notes
 Describe any challenges encountered while building the app.
