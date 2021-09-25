@@ -45,7 +45,7 @@ Heterogeneous RecyclerView - Shows the change in display style for popular and l
 <img src="Walkthroughs/Popularity.gif" width=500><br>
 
 ### Notes
-Describe any challenges encountered while building the app.
+I had the most issues with the heterogenous recycler views as I initially used the the viewholder I defined for teh initial application's onCreate method. This caused errors in casting to a different viewholder type. Apart from that, I had some minor issues fetching and separating data from the Database as I had trouble deciphering teh returned key value pairs and had to go over the results for atleast 30 minutes to undertstand the various components and data values returned and thus debug my code.
 
 ### Open-source libraries used
 
