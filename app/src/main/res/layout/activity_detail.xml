@@ -1,20 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailActivity"
-    android:orientation="vertical">
+    android:background="#0BBED6"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
 
     <TextView
         android:id="@+id/dtvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
+        android:textColor="#F8F6F6"
         android:textSize="30sp"
         tools:text="Free Guy" />
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#FDFBFB"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        tools:text="Not Appropriate for Children" />
 
     <RatingBar
         android:id="@+id/drbRating"
@@ -23,12 +39,33 @@
         android:layout_height="wrap_content"
         android:isIndicator="true"
         android:numStars="10"
-        android:rating="8" />
+        android:progressTint="#FF9800"
+        android:rating="5" />
+
+    <TextView
+        android:id="@+id/tvVoteCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        tools:text="Number of Votes: 1029" />
 
     <TextView
         android:id="@+id/dtvOverview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
+        android:textColor="#FBF9F9"
+        android:textSize="20sp"
+        android:textStyle="italic"
         tools:text="A bank teller called Guy realizes he is a background character in an open world video game called Free City that will soon go offline." />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#FAF6F6"
+        android:textSize="18sp"
+        tools:text="Release Date: 2021-08-11" />
 </LinearLayout>

@@ -3,10 +3,12 @@ package com.example.flixster.models;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.parceler.Parcel;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Parcel
 public class Movie
 {
     String backdropPath;
@@ -14,6 +16,14 @@ public class Movie
     String title;
     String overview;
     double vote;
+    int movieID;
+    String voteCount;
+    boolean ageRating;
+    String releaseDate;
+
+    //Parceler Library empty constructor
+    public Movie() {}
+
 
     public Movie(JSONObject jsonObject) throws JSONException
     {
@@ -22,6 +32,10 @@ public class Movie
         title = jsonObject.getString("title");
         overview = jsonObject.getString("overview");
         vote = jsonObject.getDouble("vote_average");
+        movieID = jsonObject.getInt("id");
+        voteCount = jsonObject.getString("vote_count");
+        ageRating = jsonObject.getBoolean("adult");
+        releaseDate = jsonObject.getString("release_date");
     }
 
     public static List<Movie> fromJsonArray(JSONArray movieJsonArray) throws JSONException
@@ -60,4 +74,19 @@ public class Movie
         return vote;
     }
 
+    public int getMovieID() {
+        return movieID;
+    }
+
+    public String getVoteCount(){
+        return voteCount;
+    }
+
+    public String getReleaseDate() {
+        return releaseDate;
+    }
+
+    public boolean getAgeRating() {
+        return ageRating;
+    }
 }
